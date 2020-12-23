@@ -3,21 +3,19 @@
 		<div class="inner">
 			<div class="header__wrap">
 				<Menu />
-				<div class="header__search">
+				<form class="header__search" @submit.prevent="handleSearch">
 					<input
 						type="text"
 						class="header__search-input"
 						placeholder="Поиск по названию картины"
 						v-model="search"
-						@keyup.enter="handleSearch"
 					>
 					<button
 						class="header__search-button"
-						@click="handleSearch"
 					>
 						<span>Найти</span>
 					</button>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>

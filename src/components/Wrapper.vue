@@ -201,6 +201,7 @@ export default {
 			}
 			&.sold {
 				opacity: 0.5;
+				cursor: not-allowed;
 			}
 		}
 	}

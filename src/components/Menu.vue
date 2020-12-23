@@ -8,7 +8,11 @@
 				v-for="(item, index) in menu"
 				:key="index"
 				class="menu__list-item"
-			>{{item}}</li>
+			>
+				<a :href="item.link">
+					{{item.name}}
+				</a>
+			</li>
 		</ul>
 	</div>
 </template>
@@ -18,11 +22,26 @@ export default {
 	name: "Menu",
 	data: () => ({
 		menu: [
-			'Каталог',
-			'Доставка',
-			'Оплата',
-			'Контакты',
-			'О галерее'
+			{
+				name: 'Каталог',
+				link: '/catalog'
+			},
+			{
+				name: 'Доставка',
+				link: '/delivery'
+			},
+			{
+				name: 'Оплата',
+				link: '/payment'
+			},
+			{
+				name: 'Контакты',
+				link: '/contacts'
+			},
+			{
+				name: 'О галерее',
+				link: '/about'
+			}
 		]
 	})
 }

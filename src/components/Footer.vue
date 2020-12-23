@@ -6,7 +6,7 @@
 				<ul class="footer__info">
 					<li class="footer__info-item">
 						<img src="@/assets/phone.svg" alt="phone" class="footer__info-img">
-						<span>+7 (495) 555-55-55</span>
+						<a href="tel:+74955555555">+7 (495) 555-55-55</a>
 					</li>
 					<li class="footer__info-item">
 						<img src="@/assets/loc.svg" alt="pin" class="footer__info-img">
