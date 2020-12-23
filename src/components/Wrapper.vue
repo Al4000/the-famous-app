@@ -1,7 +1,7 @@
 <template>
 	<div class="main">
 		<div class="inner">
-			<h1>Картины эпохи Возрождения</h1>
+			<h1>{{title}}</h1>
 			<ul	class="main__cards" v-if="displayItems.length">
 				<li
 					class="main__card"
@@ -41,7 +41,7 @@
 				<h2>Картин по вашему запросу не найдено. Попробуйте изменить запрос</h2>
 			</div>
 		</div>
-		<Loading v-if="isLoading"/>
+		<Loading v-if="isLoading" />
 	</div>
 </template>
 
@@ -69,6 +69,7 @@ export default {
 	},
 	data: () => ({
 		isLoading: false,
+		title: 'Картины эпохи Возрождения',
 		cards: [
 			{
 				id: 1,
@@ -137,7 +138,7 @@ export default {
 		displayItems() {
 			return this.cards.filter(item => item.title.toLowerCase().indexOf(this.searchQuery) !== -1)
 		},
-	},
+	}
 }
 </script>
 
@@ -174,10 +175,12 @@ export default {
 				height: 100%;
 			}
 			&-price {
+				white-space: nowrap;
 				&--old {
 					color: #A0A0A0;
 					position: relative;
 					display: inline-block;
+					white-space: nowrap;
 					&::before {
 						content: '';
 						position: absolute;

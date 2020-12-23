@@ -10,9 +10,7 @@
 						placeholder="Поиск по названию картины"
 						v-model="search"
 					>
-					<button
-						class="header__search-button"
-					>
+					<button	class="header__search-button">
 						<span>Найти</span>
 					</button>
 				</form>

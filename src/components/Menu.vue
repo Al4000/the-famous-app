@@ -61,7 +61,7 @@ export default {
 				line-height: 21px;
 				margin-left: 48px;
 				cursor: pointer;
-				transition: color 0.3s ease 0s;
+				transition: color 0.25s ease 0s;
 				&:hover {
 					color: lighten(#343030, 20%);
 				}

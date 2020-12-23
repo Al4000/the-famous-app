@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 		<Header />
-		<Wrapper :searchQuery="searchQuery"/>
+		<Wrapper :searchQuery="searchQuery" />
 		<Footer />
   </div>
 </template>
@@ -31,12 +31,12 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Merriweather, Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-	background: #F6F3F3;
-	min-height: 100vh;
-	color: #343030;
-}
+	#app {
+		font-family: Merriweather, Avenir, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		background: #F6F3F3;
+		min-height: 100vh;
+		color: #343030;
+	}
 </style>
