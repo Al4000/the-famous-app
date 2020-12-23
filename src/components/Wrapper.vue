@@ -1,7 +1,7 @@
 <template>
 	<div class="main">
 		<div class="inner">
-			<h1>{{title}}</h1>
+			<h1 class="main__title">{{title}}</h1>
 			<ul	class="main__cards" v-if="displayItems.length">
 				<li
 					class="main__card"
@@ -106,7 +106,7 @@ export default {
 				old_price: false,
 				inCart: false,
 				isSold: true
-			},
+			}
 		]
 	}),
 	methods: {
@@ -137,18 +137,18 @@ export default {
 	computed: {
 		displayItems() {
 			return this.cards.filter(item => item.title.toLowerCase().indexOf(this.searchQuery) !== -1)
-		},
+		}
 	}
 }
 </script>
 
 <style scoped lang="scss">
-	h1 {
-		padding-top: 45px;
-		margin-bottom: 39px;
-	}
 	.main {
 		min-height: calc(100vh - 193px);
+		&__title {
+			padding-top: 45px;
+			margin-bottom: 39px;
+		}
 		&__empty {
 			margin-top: 100px;
 			text-align: center;
